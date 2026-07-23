@@ -116,11 +116,13 @@
 /* Mobil cihazlar için galeri ayarı */
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: 1fr; /* Telefonda fotoğraflar alt alta tek sütun olsun */
-        padding: 0 15px;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important; /* Fotoğraflar arası boşluk */
+        padding: 0 20px !important;
     }
     
     .gallery-item {
-        height: 240px; /* Mobilde yükseklik biraz daha kompakt olsun */
+        height: 250px !important;
+        width: 100% !important;
     }
 }
