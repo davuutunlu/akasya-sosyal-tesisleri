@@ -113,3 +113,14 @@
     color:white;
     cursor:pointer;
 }
+/* Mobil cihazlar için galeri ayarı */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Telefonda fotoğraflar alt alta tek sütun olsun */
+        padding: 0 15px;
+    }
+    
+    .gallery-item {
+        height: 240px; /* Mobilde yükseklik biraz daha kompakt olsun */
+    }
+}
