@@ -116,13 +116,15 @@
 /* Mobil cihazlar için galeri ayarı */
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important; /* Fotoğraflar arası boşluk */
-        padding: 0 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important; /* Fotoğraflar arası net boşluk */
+        padding: 0 15px !important;
     }
     
     .gallery-item {
-        height: 250px !important;
+        height: 260px !important;
         width: 100% !important;
+        margin-bottom: 0 !important;
     }
 }
